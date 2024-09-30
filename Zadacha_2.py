@@ -43,9 +43,9 @@ lymda_k = 1
 tao_k = 1 - ((gamma-1)/(gamma+1)) * lymda_k
 pi_k = math.pow((1 - ((gamma-1)/(gamma+1)) * lymda_k), gamma/(gamma-1))
 E_k = pi_k / tao_k
-Rho_k = E_k * Rho_t
-#F_k = G / (W_k * Rho_k)
-F_k = (F_a * W_a * Rho_a) / (W_k * Rho_k)
-d_k = math.sqrt((4 * F_k)/np.pi)
+Rho_k = E_k * Rho_t                                 # Плостность в критическом сечении
+F_k = (F_a * W_a * Rho_a) / (W_k * Rho_k)           # Площадь критического сечения
+d_k = math.sqrt((4 * F_k)/np.pi)                    # Диаметр критического сечения
+
 print (f"Диаметр критического сечения: {d_k}")
 
