@@ -15,8 +15,8 @@ P_a = P0        # Т.к. режим течения расчётный
 
 # Определим ГДФ для выходного сечения:
 
-lymda = 1.857
 pi = P_a / P_t
+lymda = 1.857                                       # Значение лямбды взято из расчётов в Mathcad
 tao = 1 - ((gamma-1)/(gamma+1))*math.pow(lymda, 2)
 q = lymda * math.pow(((gamma+1)/2), (1/(gamma-1))) * math.pow(1 - ((gamma-1)/(gamma+1))*math.pow(lymda, 2), (1/(gamma-1)))
 E = pi / tao
